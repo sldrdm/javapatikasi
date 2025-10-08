@@ -1,50 +1,26 @@
 import java.util.Scanner;
 
+public class Main {
 
-public class Main
-{
-    public static void main(String[] args){
-        int math,fizik, kimya,turkce,muzik, tarih;
-        System.out.println("math puanınızı giriniz: ");
-        Scanner inputmath =new Scanner(System.in);
-         math= inputmath.nextInt();
-        System.out.println(math);
+    public static void main (String[] args) {
 
-        System.out.println("fizik puanınızı giriniz: ");
+        Scanner input = new Scanner(System.in);
+        System.out.print("Harcamanızı giriniz: ");
 
-        fizik= inputmath.nextInt();
-        System.out.println(fizik);
-
-        System.out.println("kimya puanınızı giriniz: ");
-
-         kimya= inputmath.nextInt();
-        System.out.println(kimya);
-        System.out.println("Türkçe puanınızı giriniz: ");
-
-         turkce= inputmath.nextInt();
-        System.out.println(turkce);
-        System.out.println("tarih puanınızı giriniz: ");
-
-         tarih= inputmath.nextInt();
-        System.out.println(tarih);
-        System.out.println("Muzik puanınızı giriniz: ");
-
-         muzik= inputmath.nextInt();
-        System.out.println(muzik);
-        int toplam ;
-        toplam=math+fizik+kimya+turkce+muzik+tarih;
-        System.out.println("toplam : " + toplam);
-        int ort;
-        ort= toplam /6;
-
-
-        System.out.println("ortalama :" +ort);
-        if(ort>60)
-        {
-            System.out.println("Sınıfı geçti");
+        double tutar = input.nextDouble();
+        double kdvOran;
+        if (tutar > 1000) {
+            kdvOran = 0.08;
+        } else {
+            kdvOran = 0.18;
         }
-        else {
-            System.out.println("Sınıfta kaldı ");
-        }
+        double kdvTutari = tutar * kdvOran;
+        double kdvDahilTutar = tutar + kdvTutari;
+        System.out.println("-------------------------------------");
+        System.out.println("KDV Oranı:           %" + (kdvOran * 100));
+        System.out.println("KDV'siz Tutar:       " + tutar + " TL");
+        System.out.println("Uygulanan KDV Tutarı: " + kdvTutari + " TL");
+        System.out.println("KDV Dahil Toplam Tutar: " + kdvDahilTutar + " TL");
+        input.close();
     }
 }

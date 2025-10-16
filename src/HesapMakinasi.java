@@ -27,7 +27,7 @@ public class HesapMakinasi {
                     System.out.println("hatali giriş yaptiniz");
                 }
                 System.out.println("bolme= " + (n1 / n2));
-                break;
+                break ;
 
         }
 

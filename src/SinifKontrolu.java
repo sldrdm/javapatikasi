@@ -21,11 +21,11 @@ public class SinifKontrolu {
 
         double avarage=(mat+fizik+turkce+muzik+kimya)/5;
         if(avarage>55){
-            System.out.println("Geçtiniz");
+            System.out.println("Geçtiniz ");
         }
         else {
-            System.out.println("kaldınız.");
+            System.out.println("kaldınız.Seneye yeniden dene ");
         }
-        System.out.println("Ortalamanız : "+avarage);
+        System.out.println("Ortalamanız :  "+avarage);
     }
 }

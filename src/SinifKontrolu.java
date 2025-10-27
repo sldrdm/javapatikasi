@@ -16,12 +16,12 @@ public class SinifKontrolu {
         System.out.println("fizik notunuzu giriniz: ");
         fizik= inp.nextInt();
 
-        System.out.println("müzik notunuzu giriniz: ");
+        System.out.println("müzik notunuzu giriniz:  ");
         muzik= inp.nextInt();
 
         double avarage=(mat+fizik+turkce+muzik+kimya)/5;
         if(avarage>55){
-            System.out.println("Geçtiniz ");
+            System.out.println("Geçtiniz.  ");
         }
         else {
             System.out.println("kaldınız.Seneye yeniden dene ");

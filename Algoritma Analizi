@@ -1,0 +1,7 @@
+1-Average Case kapsamında değerlendirilir çünkü worst case durumu en kötü durum olarak karşımıza çıkar.
+
+2-
+Step-1 [7,3,5,8,2,9,4,15,6]
+Step-2 [3,7,5,8,2,9,4,15,6]
+Step-3 [3,5,7,8,2,9,4,15,6]
+Step-4 [2,3,5,7,8,9,4,15,6]
